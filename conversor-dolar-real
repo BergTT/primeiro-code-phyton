@@ -1,0 +1,19 @@
+
+quantDolar, quantReal, cotacaoDolar = 0.0, 0.0, 0.0
+opcao = 0
+
+print("Se você quer converter de Real para Dólar, digite 1. Ou...\nSe você quer converter de Dólar para Real, digite 2.")
+opcao = int(input("Escolha a opção: "))
+
+cotacaoDolar = float(input("Qual a cotação do Dólar hoje: "))
+
+if opcao == 1:
+        print("\nOlá! Vamos converter os seus Reais para Dólar.")
+        quantReal = float(input("Digite quantos Reais você deseja converter: "))
+        quantDolar = quantReal / cotacaoDolar
+        print("\n", quantReal," em Reais equivale a ", quantDolar," em Dólares.\n")
+elif opcao == 2:
+        print("\nOlá! Vamos converter os seus Dólares para Reais.")
+        quantDolar = float(input("Digite quantos Dólares você deseja converter: "))
+        quantReal = quantDolar * cotacaoDolar
+        print("\n", quantDolar," em Dólares equivale a ", quantReal," em Reais.\n")
